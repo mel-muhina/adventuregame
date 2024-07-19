@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.cardSelection {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.memory-card img {
+    width: 250px;
+    height: 250px;
+}
+
+.back-face {
+    visibility: hidden;
+}
+
+.header {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5%;
+}
