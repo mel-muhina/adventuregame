@@ -1,28 +1,21 @@
-const frontCard = document.querySelector('#cardSelection .front-face');
-const backCard = document.querySelector('#cardSelection .back-face');
 const h1Text = document.querySelector("header h1")
 const h2Text = document.querySelector("header h2")
+const cardsList= document.querySelectorAll("div.memory-card");
+
+console.log(cardsList)
+
 
 let toggle = true
 
 // Function to show back of card when clicked on
-const flipCard = (card) => {
-    if (toggle) {
-         backCard.style.display = "none";
-         frontCard.style.display = "block";
-        //  backCard.src = frontCard.src
-         console.log("click on flipCard, flip to front", frontCard.src)
-                   
-    } else {
-        frontCard.style.display = "none";
-        backCard.style.display = "block";
-        //  frontCard.src = backCard.src    
-         console.log("click on flipCard, flip to back", backCard.src)
-    }
-     toggle = !toggle;
-   
-}
+const flipCard = (el) => {
+console.log(el)
+        const card = el.currentTarget;
+        card.classList.toggle('flipped')
+        console.log(card)
+   }
 
+cardsList.forEach(el => {
+     el.addEventListener("click", flipCard);
+});
 
-frontCard.addEventListener("click", flipCard);
-backCard.addEventListener("click", flipCard);

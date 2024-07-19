@@ -29,6 +29,14 @@ body {
     
 }
 
+.flipped .front-face {
+    display: block;
+}
+
+.flipped .back-face {
+    display: none;
+}
+
 header {
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
