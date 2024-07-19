@@ -1,29 +1,35 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     text-align: center;
+    width: 100%;
+
+    
 }
 
-.cardSelection {
+#cardSelection {
+    text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
+    padding: 1% 15% 15% 15%;
+    
 }
+
 
 .memory-card img {
+    
     width: 250px;
     height: 250px;
+    padding: 3px;
+    margin: auto 0;
+    
 }
 
-.back-face {
-    visibility: hidden;
+.front-face {
+    display: none;
+    
 }
 
-.header {
+header {
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 5%;
